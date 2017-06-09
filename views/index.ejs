@@ -21,7 +21,7 @@
           <a href='contacts/<%= contact.id %>' style="color:#002653">
             <%= contact.name %>
           </a>
-          <a class="delete" href='' style="color:#D0011B"> X </a>
+          <a class="delete" onclick='confirm()' href='' style="color:#D0011B"> X </a>
         </li>
         <% }) %>
     </ul>

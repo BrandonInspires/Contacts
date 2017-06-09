@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+.createNewContact{
+  background-color:#4990E2;
+}
+
 
 header {
     background-color: #4990E2;
@@ -64,3 +68,4 @@ h1, h2, h3, title {
 #searchbox {
   border-radius: 4px;
 }
+

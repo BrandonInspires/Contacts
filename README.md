@@ -50,10 +50,10 @@ For example, visiting the route /contacts/3 would show the contact with the data
 - [x] Database table contacts has fields for contact name, email address, phone number, home address (separate fields for: street, city, state, country, and zip code), birthday, and personal website.
 - [x] Columns in database table use appropriate data types.
 - [x] Your app uses pg, pg-promise or knex to communicate with a postgres server.
-- [ ] There are scripts defined to import contact data and load the schema:
+- [x] There are scripts defined to import contact data and load the schema:
 
-- [ ] $ npm run schema loads the schema (schema.sql) into the database
-- [ ] $ npm run import imports the data in contacts_full.sql into the database
+- [x] $ npm run schema loads the schema (schema.sql) into the database
+- [x] $ npm run import imports the data in contacts_full.sql into the database
 User Stories
 
 Users of the app have the ability to take the following actions:
@@ -84,18 +84,18 @@ For example, if a user creates a new contact “Ada Lovelace”, then after subm
 - [x]  The site header has a link to the homepage.
 - [x]  The site header has a link to the new contact page (/contacts/new).
 - [ ]  The site header has a a text input that lets you fuzzy search for contacts.
-- [ ]  The color of the header, link text, etc. are exactly the same as the colors in the mockups.
+- [x]  The color of the header, link text, etc. are exactly the same as the colors in the mockups.
 - [x]  Background: #50E3C2 (teal)
-- [ ]  Header, button: #4990E2 (blue)
+- [x]  Header, button: #4990E2 (blue)
 - [x]  Default text: #4A4A4A (dark grey)
-- [ ]  Secondary text: #9B9B9B (light grey)
+- [x]  Secondary text: #9B9B9B (light grey)
 - [x]  Link text: #002653 (dark blue)
 - [x]  Delete links: #D0011B (red)
 - [x]  The font across the whole site is monospace.
 - [x]  The base font-size of the site is 16px.
 - [x]  The List View (/) looks the same as in the mockup (except with different contact data).
 - [x]  The Detail View (/contacts/:id) looks the same as in the mockup (except with different contact data).
-- [ ]  The New Contact View (/contacts/new) looks the same as in the mockup (except with different contact data).
+- [x]  The New Contact View (/contacts/new) looks the same as in the mockup (except with different contact data).
 - [ ]  The Search View (/search) looks the same as in the mockup (except with different contact data).
 
 # Templating and Includes
