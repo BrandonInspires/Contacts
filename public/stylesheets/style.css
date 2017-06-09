@@ -1,8 +1,19 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #50E3C2;
+  font: 16px monospace;
+  color: #4a4a4a;
 }
 
 a {
-  color: #00B7FF;
+  color: #002653;
 }
+
+#delete {
+  color: #d0011b;
+}
+
+header {
+  background-color: #4990e2;
+}
+
