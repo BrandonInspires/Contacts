@@ -85,14 +85,14 @@ For example, if a user creates a new contact “Ada Lovelace”, then after subm
 - [ ]  The site header has a link to the new contact page (/contacts/new).
 - [ ]  The site header has a a text input that lets you fuzzy search for contacts.
 - [ ]  The color of the header, link text, etc. are exactly the same as the colors in the mockups.
-- [ ]  Background: #50E3C2 (teal)
+- [x]  Background: #50E3C2 (teal)
 - [ ]  Header, button: #4990E2 (blue)
-- [ ]  Default text: #4A4A4A (dark grey)
+- [x]  Default text: #4A4A4A (dark grey)
 - [ ]  Secondary text: #9B9B9B (light grey)
-- [ ]  Link text: #002653 (dark blue)
-- [ ]  Delete links: #D0011B (red)
-- [ ]  The font across the whole site is monospace.
-- [ ]  The base font-size of the site is 16px.
+- [x]  Link text: #002653 (dark blue)
+- [x]  Delete links: #D0011B (red)
+- [x]  The font across the whole site is monospace.
+- [x]  The base font-size of the site is 16px.
 - [ ]  The List View (/) looks the same as in the mockup (except with different contact data).
 - [ ]  The Detail View (/contacts/:id) looks the same as in the mockup (except with different contact data).
 - [ ]  The New Contact View (/contacts/new) looks the same as in the mockup (except with different contact data).
