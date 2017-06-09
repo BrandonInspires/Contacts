@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <% include ./partials/head %>
+
+</head>
+
+<body class="centered-wrapper">
+  <div class="centered-content">
+    <header>
+      <% include ./partials/header %>
+    </header>
+
+    <h1>
+      <%= title %>
+    </h1>
+    <ul>
+      <% contacts.forEach(function(contact){ %>
+        <li>
+          <a href='contacts/<%= contact.id %>' style="color:#002653">
+            <%= contact.name %>
+          </a>
+          <a class="delete" href='' style="color:#D0011B"> X </a>
+        </li>
+        <% }) %>
+    </ul>
+  </div>
+</body>
+
 </html>
