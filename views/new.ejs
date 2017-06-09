@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+ <% include ./partials/head %>
+<body class="centered-wrapper">
+  <div class="centered-content">
+    <header>
+      <% include ./partials/header %>
+    </header>
+        <form action="/contacts/new" method="post">
+        </form>
+
+        <form action="/contacts/new" method="post" class="centered-content">
+        <table>
+          <tbody>
+            <tr>
+              <td class="secondaryText">Name:</td>
+              <td>
+                <input id="name" type="text" required name="name" value="Full Name">
+              </td>
+            </tr>
+            <tr>
+              <td class="secondaryText">Email:</td>
+              <td>
+              <input id="email" type="email" required name="email" value="youremail@email.com"></br>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="secondaryText">Phone:</td>
+              <td>
+          <input id="phone" type="text" required name="phone" pattern="[0-9]{9}" value="">
+              </td>
+            </tr>
+            <tr>
+              <td class="secondaryText">Address:</td>
+              <td>
+                <input id="street" type="text" required name="street" value="">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+            <input id="city" type="text" required name="city" value=""><br>
+            <input id="state" type="text" required name="state" value=""><br>
+            <input id="zip" type="number" required name="zip" value="90990">
+          
+              </td>
+            </tr>
+            <tr>
+              <td class="secondaryText">Country:</td>
+              <td>
+              <input id="country" type="text" required name="country" value="">
+              </td>
+            </tr>
+            <tr>
+              <td class="secondaryText">Birthday:</td>
+              <td>
+            <input id="birthday" type="text" required name="birthday" value=""
+              </td>
+            </tr>
+            <tr>
+              <td class="secondaryText">Website:</td>
+              <td>
+              <input id="website" type="url" required name="website" value="">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+          <button type="submit"> Submit</button>
+        </form>
+      </div>
+
+</body>
+
 </html>

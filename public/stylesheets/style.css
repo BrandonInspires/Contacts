@@ -31,7 +31,7 @@ header {
     color: white;
   }
 
-header a {
+header li {
   text-decoration: coral;
   display: inline-block;
 }
@@ -56,6 +56,9 @@ li {
 
 h1, h2, h3, title {
   margin: 25px;
+}
+.secondaryText {
+  color: #9B9B9B
 }
 
 #searchbox {

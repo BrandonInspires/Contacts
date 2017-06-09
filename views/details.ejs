@@ -9,30 +9,30 @@
     <header>
       <% include ./partials/header %>
     </header>
-    <h1>Details</h1>
-
     <% contacts.forEach(function(contact){ %>
+    <h1><%= contact.name %></h1> <a class="delete" href="">DELETE</a>
+
       <div>
 <table>
   <tbody>
     <tr>
-      <td>Name:</td>
+      <td class="secondaryText">Name:</td>
       <td>
         <%= contact.name %>
       </td>
     </tr>
     <tr>
-      <td>Email:</td>
+      <td class="secondaryText">Email:</td>
       <td><a href='mailto:/<%= contact.email %>'>
         <%= contact.email %>
       </a></td>
     </tr>
     <tr>
-      <td>Phone:</td>
+      <td class="secondaryText">Phone:</td>
       <td><%= contact.phone %></td>
     </tr>
     <tr>
-      <td>Address:</td>
+      <td class="secondaryText">Address:</td>
       <td><%= contact.street %></td>
     </tr>
     <tr>
@@ -40,15 +40,15 @@
       <td><%= contact.city %>, <%= contact.state %> <%= contact.zip %></td>
     </tr>
     <tr>
-      <td>Country:</td>
+      <td class="secondaryText" >Country:</td>
       <td><%= contact.country %></td>
     </tr>
     <tr>
-      <td>Birthday:</td>
+      <td class="secondaryText">Birthday:</td>
       <td><%= contact.the_month %>/<%= contact.the_day %>/<%= contact.the_year %></td>
     </tr>
     <tr>
-      <td>Website:</td>
+      <td class="secondaryText">Website:</td>
       <td><a href='<%= contact.website %>'><%= contact.website %></a></td>
     </tr>
   </tbody>
