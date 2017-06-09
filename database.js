@@ -35,11 +35,20 @@ function getContacts (req, res, next) {
       return next(err);
     });
 }
+function getContactDetails (req, res, next) {
+  db.any('SELECT contacts.name, contacts.email, contacts.phone, contacts.street, contacts.city, contacts.state, contacts.zip, contacts.country, contacts.website, extract(day from contacts.birthday::date) as the_day, extract(month from contacts.birthday::date) as the_month, extract(year from contacts.birthday::date) as the_year FROM contacts WHERE contacts.id = $1', parseInt(req.params.id))
+  .then(function (contacts) {
+    res.render('details', { title: contacts.id, contacts: contacts})
+  })
+    .catch(function (err) {
+      return next(err);
+    });
+}
 
 
 
 module.exports = {
   getContacts,
-  // getContactDetails,
+  getContactDetails,
   // createNewContact
 }

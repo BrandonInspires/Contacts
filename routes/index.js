@@ -12,9 +12,7 @@ router.get('/contacts/new', db.getContacts, function(req, res, next) {
   res.render('new', { title: 'New Contacts' });
 });
 /* GET Contact Details. */
-router.get('/contacts/:id', function(req, res, next) {
-  res.render('details', { title: 'Contact Details' });
-});
+router.get('/contacts/:id', db.getContactDetails);
 
 
 module.exports = router;

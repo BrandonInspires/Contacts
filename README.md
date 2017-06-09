@@ -93,21 +93,21 @@ For example, if a user creates a new contact “Ada Lovelace”, then after subm
 - [x]  Delete links: #D0011B (red)
 - [x]  The font across the whole site is monospace.
 - [x]  The base font-size of the site is 16px.
-- [ ]  The List View (/) looks the same as in the mockup (except with different contact data).
-- [ ]  The Detail View (/contacts/:id) looks the same as in the mockup (except with different contact data).
+- [x]  The List View (/) looks the same as in the mockup (except with different contact data).
+- [x]  The Detail View (/contacts/:id) looks the same as in the mockup (except with different contact data).
 - [ ]  The New Contact View (/contacts/new) looks the same as in the mockup (except with different contact data).
 - [ ]  The Search View (/search) looks the same as in the mockup (except with different contact data).
 
 # Templating and Includes
 
-- [ ] Use HTML templating to build your web pages and embed dynamic data.
+- [x] Use HTML templating to build your web pages and embed dynamic data.
 
-- [ ] The server uses the EJS templating language to build HTML.
-- [ ] Each route that renders HTML uses its own EJS template.
-- [ ] Each page template shares the same layout. 
-- [ ] The means the <head> is consistent across all paged and is not duplicated.
-- [ ] Each page template shared the same nav bar. 
-- [ ] Each page has the same nav bar but the code is not duplicated and each page template uses the same page header ejs template (eg: header.ejs).
+- [x] The server uses the EJS templating language to build HTML.
+- [x] Each route that renders HTML uses its own EJS template.
+- [x] Each page template shares the same layout. 
+- [x] The means the <head> is consistent across all paged and is not duplicated.
+- [x] Each page template shared the same nav bar. 
+- [x] Each page has the same nav bar but the code is not duplicated and each page template uses the same page header ejs template (eg: header.ejs).
 
 # Browser Interactivity
 
