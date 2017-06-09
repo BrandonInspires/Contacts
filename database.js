@@ -66,14 +66,7 @@ function getContactDetails (req, res, next) {
       return next(err);
     });
 }
-// function addNewContact (req, res, next) {
-//   db.any('SELECT * FROM contacts ORDER BY contacts.name')
-//   .then(function (contacts) {
-//     res.render('new', { title: 'Contacts', contacts: contacts})
-//   })
-//     .catch(function (err) {
-//       return next(err);
-//     });
+
 
 
 
