@@ -11,11 +11,11 @@ router.get('/contacts', function(req, res, next) {
 });
 /* GET New Contact Page. */
 router.get('/contacts/new', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('new', { title: 'New Contacts' });
 });
 /* GET Contact Details. */
 router.get('/contacts/:id', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('details', { title: 'Contact Details' });
 });
 
 
